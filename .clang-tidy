@@ -1,0 +1,23 @@
+Checks: >
+  -*,
+  bugprone-*,
+  clang-analyzer-*,
+  performance-*,
+  readability-*,
+  modernize-*,
+
+CheckOptions:
+  - key: readability-identifier-naming.VariableCase
+    value: lower_case
+
+  - key: readability-identifier-naming.FunctionCase
+    value: lower_case
+
+  - key: readability-identifier-naming.TypeCase
+    value: CamelCase
+
+  - key: llvm-header-guard.HeaderFileExtensions
+    value: "h"
+
+  - key: hicpp-signed-bitwise.IgnorePositiveIntegerLiterals
+    value: "1"
