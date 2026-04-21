@@ -8,5 +8,5 @@ target_include_directories(${CMAKE_PROJECT_NAME}
         INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/Inc
 )
 
-target_compile_features(${CMAKE_PROJECT_NAME} PUBLIC c_std_11)
-target_compile_options(${CMAKE_PROJECT_NAME} PRIVATE -Wall -Wextra -Wpedantic)
+target_compile_features(${CMAKE_PROJECT_NAME} INTERFACE c_std_11)
+target_compile_options(${CMAKE_PROJECT_NAME} INTERFACE -Wall -Wextra -Wpedantic)
